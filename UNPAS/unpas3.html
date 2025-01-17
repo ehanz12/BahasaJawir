@@ -1,0 +1,65 @@
+<!-- // //operator di js hampir mirip dengan php 
+// //ada ternry ,bolean , string, number , float , parselntfloat
+// //dan lain lain
+
+
+// let a = 10
+// let b = 15
+
+// let hasil = a + b;
+
+// console.log(hasil)
+
+
+// //typeof
+// //digunakan unutk mgetauhi keterangan tipe data
+// //contoh
+
+
+// console.log(typeof(10));
+
+// //boolean 
+
+// console.log(Boolean(10 === 10))
+
+
+//poop up  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+
+        const container = document.getElementById('root');
+        const root = ReactDOM.createRoot(container);
+        
+
+        function HomePage() {
+    const studenst = ['reihan', 'aditya','putra'];
+    
+    return (
+
+        <>
+
+        <header name = "pahlawan kegelapan"/>
+
+        <ul>
+            {
+                studenst.map((student) => (
+                    <li key={student}>{student}</li>
+                ))
+            }
+        </ul>
+        </>
+    )
+ }
+ root.render(<HomePage />);
+    </script>
+</body>
+</html>
+ 
